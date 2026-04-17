@@ -1,6 +1,6 @@
 # MAUKAN THEME
 
-"Maukan" is an (Oh My Bash)[https://ohmybash.nntoan.com/] theme inspired by (Mairan)[https://github.com/ohmybash/oh-my-bash/tree/master/themes/mairan]. For a better visual result, install (miasma theme)[https://github.com/xero/miasma.nvim] and (Nerd Font)[https://www.nerdfonts.com/] in your terminal.
+"Maukan" is an [Oh My Bash](https://ohmybash.nntoan.com/) theme inspired by [Mairan](https://github.com/ohmybash/oh-my-bash/tree/master/themes/mairan). For a better visual result, install [miasma theme](https://github.com/xero/miasma.nvim) and [Nerd Font](https://www.nerdfonts.com/) in your terminal.
 
 ![Theme Preview](./preview.png)
 
