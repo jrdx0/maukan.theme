@@ -114,7 +114,7 @@ function modern_scm_prompt {
   fi
 
   if [[ -n $PREFIX ]]; then
-    _omb_util_print "${R_YELLOW}${CHAR} ${REPO_NAME}/${PREFIX:1}${BRANCH_LABEL}"
+    _omb_util_print "${R_YELLOW}${CHAR} ${REPO_NAME}/${PREFIX%/}${BRANCH_LABEL}"
   else
     _omb_util_print "${R_YELLOW}${CHAR} ${REPO_NAME}${BRANCH_LABEL}"
   fi
