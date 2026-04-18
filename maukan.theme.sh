@@ -108,9 +108,9 @@ function modern_scm_prompt {
 
   if git rev-parse HEAD &> /dev/null 2>&1; then
     local BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD)
-    local BRANCH_LABEL=" ${R_TEAL}(${BRANCH_NAME})"
+    local BRANCH_LABEL=" ${R_TEAL}($(scm_prompt_info)${R_TEAL})"
   else
-    local BRANCH_LABEL=""
+    local BRANCH_LABEL="$(scm_prompt_info)"
   fi
 
   if [[ -n $PREFIX ]]; then
