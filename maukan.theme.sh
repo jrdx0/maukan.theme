@@ -130,8 +130,6 @@ function bun_prompt {
 
 
 function node_prompt {
-  [[ -z $BUN_INSTALL ]] && return
-
   local DIR=$(get_project_dir)
 
   [[ -f "${DIR}/bun.lock" ]] && return
@@ -154,7 +152,7 @@ function _omb_theme_PROMPT_COMMAND {
   local SCM_PROMPT="${O_BKT}$(modern_scm_prompt)${C_BKT}"
 
   case $(id -u) in
-    *) PS1="\n${TITLEBAR}${MIASMA_WHITE}─▪${MIASMA_RESET}${PS}${SCM_PROMPT}${MIASMA_RESET}$(bun_prompt)$(node_prompt) "
+    *) PS1="${TITLEBAR}${MIASMA_WHITE}─▪${MIASMA_RESET}${PS}${SCM_PROMPT}${MIASMA_RESET}$(bun_prompt)$(node_prompt) "
      ;;
   esac
 }
